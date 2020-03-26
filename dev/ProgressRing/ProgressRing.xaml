@@ -50,12 +50,15 @@
                             </VisualStateGroup>
                         </VisualStateManager.VisualStateGroups>
 
-                        <!-- AnimatedVisualPlayer for Lottie -->
-                        <local:AnimatedVisualPlayer x:Name="LottiePlayer" AutoPlay="false" Stretch="fill" Opacity="0"/>
+                        <!-- Determinate AnimatedVisualPlayer for Lottie -->
+                        <local:AnimatedVisualPlayer x:Name="DeterminateLottiePlayer" AutoPlay="false" Stretch="fill" Opacity="0"/>
+
+                        <!-- Indeterminate AnimatedVisualPlayer for Lottie -->
+                        <local:AnimatedVisualPlayer x:Name="IndeterminateLottiePlayer" AutoPlay="false" Stretch="fill" Opacity="0"/>
 
                         <!--ProgressRing-->
-                        <Grid x:Name="DeterminateProgressRingRoot">
-                            <!-- Progress Ring Track-->
+                        <!--<Grid x:Name="DeterminateProgressRingRoot">
+                            --><!-- Progress Ring Track--><!--
                             <Path
                                 x:Name="OutlinePathPart"
                                 Fill="Transparent"
@@ -82,7 +85,7 @@
                                     </PathGeometry>
                                 </Path.Data>
                             </Path>
-                            <!-- Progress Ring Indicator-->
+                            --><!-- Progress Ring Indicator--><!--
                             <Path
                                 x:Name="RingPathPart"
                                 Fill="Transparent"
@@ -109,7 +112,7 @@
                                     </PathGeometry>
                                 </Path.Data>
                             </Path>
-                        </Grid>
+                        </Grid>-->
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>

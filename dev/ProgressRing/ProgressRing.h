@@ -36,6 +36,7 @@ private:
     void ApplyLottieAnimation();
     void SetLottieForegroundColor(winrt::impl::com_ref<AnimatedVisuals::ProgressRingIndeterminate> progressRingIndeterminate);
     void SetLottieBackgroundColor(winrt::impl::com_ref<AnimatedVisuals::ProgressRingIndeterminate> progressRingIndeterminate);
+    void UpdateLottieProgress();
     void UpdateStates();
     void UpdateSegment();
     void UpdateRing();
@@ -48,5 +49,6 @@ private:
     tracker_ref<winrt::Path> m_ringPath{ this };
     tracker_ref<winrt::PathFigure> m_ringFigure{ this };
     tracker_ref<winrt::ArcSegment> m_ringArc{ this };
-    tracker_ref<winrt::AnimatedVisualPlayer> m_player{ this };
+    tracker_ref<winrt::AnimatedVisualPlayer> m_determinatePlayer{ this };
+    tracker_ref<winrt::AnimatedVisualPlayer> m_indeterminatePlayer{ this };
 };
